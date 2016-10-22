@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rohan.scarnedice.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/winning_points_header_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/total_scores_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winning_points_header_text_view"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/user_total_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/user_total_score"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/computer_total_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/computer_total_score"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/current_turn_score_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_scores_linear_layout"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/user_current_turn_score"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/dice_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_turn_score_text_view"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:src="@drawable/dice1" />
+
+        <LinearLayout
+            android:id="@+id/buttons_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dice_image_view"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hold_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="@string/hold" />
+
+            <Button
+                android:id="@+id/roll_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="@string/roll" />
+
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttons_linear_layout"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/you_win"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scarne Dice</string>
+    <string name="computer_current_turn_score">Computer (Current Turn):&#160;</string>
+    <string name="user_current_turn_score">User (Current Turn):&#160;</string>
+    <string name="computer_total_score">Computer (Total):&#160;</string>
+    <string name="user_total_score">User (Total):&#160;</string>
+    <string name="result_user_win">USER WINS!</string>
+    <string name="result_computer_wins">COMPUTER WINS</string>
+    <string name="hold">Hold</string>
+    <string name="roll">Roll</string>
+    <string name="reset">Reset</string>
+    <string name="you_win">YOU WIN</string>
+</resources>
